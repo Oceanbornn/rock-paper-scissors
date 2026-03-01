@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 3px solid white;
+  background-color: transparent;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.move-button:hover {
+  transform: scale(1.05);
+}
+
+.move-button:active {
+  transform: scale(0.9);
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.result.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.result.win {
+  color: #4CAF50;
+  text-shadow: 0 0 10px #4CAF50;
+}
+
+.result.lose {
+  color: #F44336;
+}
+
+.result.tie {
+  color: #FFC107;
+}
+
+.score {
+  margin-top: 30px;
+}
+
+.reset-score-button {
+  margin-top: 20px;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
